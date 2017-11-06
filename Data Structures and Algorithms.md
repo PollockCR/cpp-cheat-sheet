@@ -42,11 +42,11 @@
 
 ![Legend](General/Legend.png)
 
-![DataStructures](General/Data Structures.png)
+![DataStructures](General/DataStructures.png)
 
-![ComplexityChart](General/Complexity Chart.png)
+![ComplexityChart](General/ComplexityChart.png)
 
-![DataStructureSelection]("General/Data Structures Selection.png")
+![DataStructureSelection](General/DataStructuresSelection.png)
 -------------------------------------------------------
 ### 1.2 Vector `std::vector`
 **Use for**
@@ -524,7 +524,7 @@ p.pop();
 
 **Visualization:**
 
-![BinarySearch](Searching/Animations/Binary Search.gif)
+![BinarySearch](Searching/Animations/BinarySearch.gif)
 -------------------------------------------------------
 ### 2.4 Depth-First Search
 **Idea:**
@@ -544,7 +544,7 @@ p.pop();
 
 **Visualization:**
 
-![DepthFirstSearch](Searching/Animations/Depth-First Search.gif)
+![DepthFirstSearch](Searching/Animations/Depth-FirstSearch.gif)
 -------------------------------------------------------
 ### 2.5 Breadth-First Search
 **Idea:**
@@ -563,7 +563,7 @@ p.pop();
 
 **Visualization:**
 
-![DepthFirstSearch](Searching/Animations/Breadth-First Search.gif)
+![DepthFirstSearch](Searching/Animations/Breadth-FirstSearch.gif)
 -------------------------------------------------------
 ## 3.0 NP Complete Problems
 ### 3.1 NP Complete
@@ -613,7 +613,7 @@ p.pop();
 
 **Visualization**
 
-![InsertionSort](Sorting/Animations/Insertion Sort.gif)
+![InsertionSort](Sorting/Animations/InsertionSort.gif)
 -------------------------------------------------------
 ### 4.2 Selection Sort
 **Idea:**
@@ -646,9 +646,9 @@ p.pop();
 
 **Visualization**
 
-![SelectionSort](Sorting/Animations/Selection Sort.gif)
+![SelectionSort](Sorting/Animations/SelectionSort.gif)
 
-![SelectionSort](Sorting/Animations/Selection Sort 2.gif)
+![SelectionSort](Sorting/Animations/SelectionSort2.gif)
 -------------------------------------------------------
 ### 4.3 Bubble Sort
 **Idea:**
@@ -681,7 +681,7 @@ p.pop();
 
 **Visualization**
 
-![BubbleSort](Sorting/Animations/Bubble Sort.gif)
+![BubbleSort](Sorting/Animations/BubbleSort.gif)
 -------------------------------------------------------
 ### 4.4 Merge Sort
 **Idea:**
@@ -716,9 +716,9 @@ p.pop();
 
 **Visualization**
 
-![MergeSort](Sorting/Animations/Merge Sort.gif)
+![MergeSort](Sorting/Animations/MergeSort.gif)
 
-![MergeSort](Sorting/Animations/Merge Sort 2.gif)
+![MergeSort](Sorting/Animations/MergeSort2.gif)
 -------------------------------------------------------
 ### 4.5 Quicksort
 **Idea:**
