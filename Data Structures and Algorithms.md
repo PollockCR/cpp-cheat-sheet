@@ -33,6 +33,11 @@
 		- [4.3 Bubble Sort](#43-bubble-sort)
 		- [4.4 Merge Sort](#44-merge-sort)
 		- [4.5 Quicksort](#45-quicksort)
+	- [5.0 Concepts](#50-concepts)
+		- [5.1 Abstraction](#51-abstraction)
+		- [5.2 Encapsulation](#52-encapsulation)
+		- [5.3 Inheritance](#53-inheritance)
+		- [5.4 Polymorphism](#54-polymorphism)	
 
 <!-- /TOC -->
 
@@ -47,6 +52,7 @@
 ![ComplexityChart](General/ComplexityChart.png)
 
 ![DataStructureSelection](General/DataStructuresSelection.png)
+
 -------------------------------------------------------
 ### 1.2 Vector `std::vector`
 **Use for**
@@ -109,6 +115,7 @@ v.pop_back();                   //tail
 //Clear
 v.clear();
 ```
+
 -------------------------------------------------------
 ### 1.3 Deque `std::deque`
 **Use for**
@@ -156,6 +163,7 @@ d.pop_back();                   //tail
 //Clear
 d.clear();
 ```
+
 -------------------------------------------------------
 ### 1.4 List `std::list` and `std::forward_list`
 **Use for**
@@ -237,6 +245,7 @@ l.sort();
 //Reverse: Reverse the list order
 l.reverse();
 ```
+
 -------------------------------------------------------
 ### 1.5 Map `std::map` and `std::unordered_map`
 **Use for**
@@ -316,6 +325,7 @@ bool exists = (m.find("value") != m.end());
 //Count the number of elements with a certain key
 unsigned int count = m.count("key");
 ```
+
 -------------------------------------------------------
 ### 1.6 Set `std::set`
 **Use for**
@@ -372,6 +382,7 @@ bool exists = (s.find(20) != s.end());
 //Count the number of elements with a certain value
 unsigned int count = s.count(20);
 ```
+
 -------------------------------------------------------
 ### 1.7 Stack `std::stack`
 **Use for**
@@ -406,6 +417,7 @@ s.pop();
 //Top
 int top = s.top();
 ```
+
 -------------------------------------------------------
 ### 1.8 Queue `std::queue`
 **Use for**
@@ -438,6 +450,7 @@ unsigned int size = q.size();
 //Remove
 q.pop();
 ```
+
 -------------------------------------------------------
 ### 1.9 Priority Queue `std::priority_queue`
 **Use for**
@@ -468,6 +481,7 @@ unsigned int size = p.size();
 //Remove
 p.pop();
 ```
+
 -------------------------------------------------------
 ### 1.10 Heap `std::priority_queue`
 **Notes**
@@ -480,6 +494,7 @@ p.pop();
 **Max Heap Example (using a binary tree)**
 
 ![MaxHeap](General/MaxHeap.png)
+
 -------------------------------------------------------
 ## 2.0 Trees
 ### 2.1 Binary Tree
@@ -490,6 +505,7 @@ p.pop();
 **Binary Search Tree**
 
 ![BinarySearchTree](General/BinarySearchTree.png)
+
 -------------------------------------------------------
 ### 2.2 Balanced Trees
 * Balanced trees are a special type of tree which maintains its balance to ensure `O(log(n))` operations
@@ -525,6 +541,7 @@ p.pop();
 **Visualization:**
 
 ![BinarySearch](Searching/Animations/BinarySearch.gif)
+
 -------------------------------------------------------
 ### 2.4 Depth-First Search
 **Idea:**
@@ -545,6 +562,7 @@ p.pop();
 **Visualization:**
 
 ![DepthFirstSearch](Searching/Animations/Depth-FirstSearch.gif)
+
 -------------------------------------------------------
 ### 2.5 Breadth-First Search
 **Idea:**
@@ -629,6 +647,7 @@ p.pop();
 **Visualization**
 
 ![InsertionSort](Sorting/Animations/InsertionSort.gif)
+
 -------------------------------------------------------
 ### 4.2 Selection Sort
 **Idea:**
@@ -664,6 +683,7 @@ p.pop();
 ![SelectionSort](Sorting/Animations/SelectionSort.gif)
 
 ![SelectionSort](Sorting/Animations/SelectionSort2.gif)
+
 -------------------------------------------------------
 ### 4.3 Bubble Sort
 **Idea:**
@@ -697,6 +717,7 @@ p.pop();
 **Visualization**
 
 ![BubbleSort](Sorting/Animations/BubbleSort.gif)
+
 -------------------------------------------------------
 ### 4.4 Merge Sort
 **Idea:**
@@ -734,6 +755,7 @@ p.pop();
 ![MergeSort](Sorting/Animations/MergeSort.gif)
 
 ![MergeSort](Sorting/Animations/MergeSort2.gif)
+
 -------------------------------------------------------
 ### 4.5 Quicksort
 **Idea:**
@@ -773,3 +795,65 @@ p.pop();
 **Visualization**
 
 ![QuickSort](Sorting/Animations/Quicksort.gif)
+
+-------------------------------------------------------
+## 5.0 Concepts
+[Info](https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/)
+
+-------------------------------------------------------
+### 5.1 Abstraction
+**Idea:**
+* The process of generalization.
+* A process where you show only the "relevant" data and "hide" unnecessary details of an object from the user.
+
+**Examples:**
+* A car is composed of several other smaller objects like a gearing system, steering mechanism, engine, which are again have their own subsystems. But for humans car is a one single object, and they only need to know what parts do (i.e. gas petal, brake, gear shift) instead of how they do it.
+* When logging into Goolge account, need to know username and password. Do not need to know how information is sent to server, etc.
+
+-------------------------------------------------------
+### 5.2 Encapsulation
+(Data Hiding)
+
+**Idea:**
+* Binding the data with the code that manipulates it.
+* Keeping the data and the code safe from external interference.
+
+**Characteristics:**
+* Everyone knows how to access it.
+* Can be easily used regardless of implementation details.
+* No side effects.
+
+**Examples:**
+* Every function is an encapsulation.
+* Power steering of a car is a complex system, which internally have lots of components tightly coupled together, they work synchronously to turn the car in the desired direction. It even controls the power delivered by the engine to the steering wheel. But to the external world there is only one interface is available and rest of the complexity is hidden. Moreover, the steering unit in itself is complete and independent. It does not affect the functioning of any other mechanism.
+* User only knows that he can store data in the form of key/value pair in a Hashtable and that he can retrieve that data in the various ways. But the actual implementation like, how and where this data is actually stored, is hidden from the user. User can simply use Hashtable wherever he wants to store Key/Value pairs without bothering about its implementation.
+
+-------------------------------------------------------
+### 5.3 Inheritance
+
+**Idea:**
+* Mechanism by which an object acquires some/all properties of another object.
+* Hierarchical classification.
+
+**Examples:**
+* Car is a four wheeler vehicle so assume that we have a class FourWheeler and a sub class of it named Car. Here Car acquires the properties of a class FourWheeler. 
+
+-------------------------------------------------------
+### 5.4 Polymorphism
+
+**Idea:**
+* To process objects differently based on their data type.
+* Literally: "many forms"
+* One method with multiple implementations, for a certain class of action. Which implementation to be used is decided at runtime depending upon the situation (i.e., data type of the object).
+* Implemented by designing a generic interface, which provides generic methods for a certain class of action. Can be multiple classes which provide the implementation of these generic methods.
+
+**Examples:**
+* A car has a gear transmission system. It has four front gears and one backward gear. When the engine is accelerated, movement and power are delivered depending upon which gear is engaged. The action is same (pressing gas petal) but based the type of gear changes the action (forward, backward, etc.).
+
+**Static: Method Overloading**
+* More than one method having the same name, but behave differently based on arguments passed.
+* Decided at compile time.
+
+**Dynamic: Method Overriding**
+* A derived class is implementing a method of its super class.
+* Decided at runtime.
