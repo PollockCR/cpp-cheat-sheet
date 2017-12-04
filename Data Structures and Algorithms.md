@@ -585,12 +585,10 @@ p.pop();
 * At most *2<sup>n</sup>⋅n* sub-probelms and each one takes linear time, so total runtime is *O(2<sup>n</sup>⋅n<sup>2</sup>)*.
 
 [More info](https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_travelling_salesman_problem.htm)
-
 -------------------------------------------------------
 ### 3.3 Knapsack Problem
-
+[Info](https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_01_knapsack.htm)
 -------------------------------------------------------
-
 ## 4.0 Algorithms
 ###  4.1 Insertion Sort
 **Idea:**
