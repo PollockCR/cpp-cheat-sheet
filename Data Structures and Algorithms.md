@@ -638,16 +638,16 @@ p.pop();
 * O(n^2)
 
 **Average:**
-    * O(n^2)
+* O(n^2)
 
 **Advantages**
-    * Easy to code
-    * Intuitive
-    * Better than selection sort and bubble sort for small data sets
-    * Can sort in-place
+* Easy to code
+* Intuitive
+* Better than selection sort and bubble sort for small data sets
+* Can sort in-place
 
 **Disadvantages**
-    * Very inefficient for large datasets
+* Very inefficient for large datasets
 
 **Visualization**
 
@@ -667,23 +667,23 @@ p.pop();
 * O(1)
 
 **Best Case:**
-    * Already sorted
-    * O(n^2)
-    
+* Already sorted
+* O(n^2)
+
 **Worst Case:**
-    * Reverse sorted
-    * O(n^2)
+* Reverse sorted
+* O(n^2)
     
 **Average:**
-    * O(n^2)
+* O(n^2)
 
 **Advantages**
-    * Simple
-    * Can sort in-place
-    * Low memory usage for small datasets
+* Simple
+* Can sort in-place
+* Low memory usage for small datasets
 
 **Disadvantages**
-    * Very inefficient for large datasets
+* Very inefficient for large datasets
 
 **Visualization**
 
@@ -706,22 +706,22 @@ p.pop();
 * O(1)
 
 **Best Case:**
-    * Already sorted
-    * O(n)
+* Already sorted
+* O(n)
     
 **Worst Case:**
-    * Reverse sorted
-    * O(n^2)
+* Reverse sorted
+* O(n^2)
     
 **Average:**
-    * O(n^2)
+* O(n^2)
 
 **Advantages**
-    * Easy to detect if list is sorted
+* Easy to detect if list is sorted
 
 **Disadvantages**
-    * Very inefficient for large datasets
-    * Much worse than even insertion sort
+* Very inefficient for large datasets
+* Much worse than even insertion sort
 
 **Visualization**
 
@@ -742,24 +742,24 @@ p.pop();
 * O(n) auxiliary
 
 **Best Case:**
-    * O(nlog(n))
+* O(nlog(n))
     
 **Worst Case:**
-    * Reverse sorted
-    * O(nlog(n))
+* Reverse sorted
+* O(nlog(n))
     
 **Average:**
-    * O(nlog(n))
+* O(nlog(n))
 
 **Advantages**
-    * High efficiency on large datasets
-    * Nearly always O(nlog(n))
-    * Can be parallelized
-    * Better space complexity than standard Quicksort
+* High efficiency on large datasets
+* Nearly always O(nlog(n))
+* Can be parallelized
+* Better space complexity than standard Quicksort
 
 **Disadvantages**
-    * Still requires O(n) extra space
-    * Slightly worse than Quicksort in some instances
+* Still requires O(n) extra space
+* Slightly worse than Quicksort in some instances
 
 **Visualization**
 
@@ -781,29 +781,29 @@ p.pop();
 * O(n)
 
 **Best Case:**
-    * O(nlog(n))
-    
+* O(nlog(n))
+
 **Worst Case:**
-    * All elements equal
-    * O(n^2)
-    
+* All elements equal
+* O(n^2)
+
 **Average:**
-    * O(nlog(n))
+* O(nlog(n))
 
 **Advantages**
-    * Can be modified to use O(log(n)) space
-    * Very quick and efficient with large datasets
-    * Can be parallelized
-    * Divide and conquer algorithm
+* Can be modified to use O(log(n)) space
+* Very quick and efficient with large datasets
+* Can be parallelized
+* Divide and conquer algorithm
 
 **Disadvantages**
-    * Not stable (could swap equal elements)
-    * Worst case is worse than Merge Sort
+* Not stable (could swap equal elements)
+* Worst case is worse than Merge Sort
 
 **Optimizations**
-* Choice of pivot:
-    * Choose median of the first, middle, and last elements as pivot
-    * Counters worst-case complexity for already-sorted and reverse-sorted
+Choice of pivot:
+* Choose median of the first, middle, and last elements as pivot
+* Counters worst-case complexity for already-sorted and reverse-sorted
 
 **Visualization**
 
