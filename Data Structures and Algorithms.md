@@ -572,6 +572,19 @@ p.pop();
 
 -------------------------------------------------------
 ### 3.2 Traveling Salesman Problem
+**Idea:**
+* Visit all cities from list
+* Distances between cities known
+* Shortest possible route to visit all cities once and return to origin city?
+
+**Solution**
+* Start at city *1*, visit cities until at *j*.
+* Divide into sub-problems and keep track of cities visited.
+
+**Analysis**
+* At most *2<sup>n</sup>⋅n* sub-probelms and each one takes linear time, so total runtime is *O(2<sup>n</sup>⋅n<sup>2</sup>)*.
+
+[More info](https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_travelling_salesman_problem.htm)
 
 -------------------------------------------------------
 ### 3.3 Knapsack Problem
@@ -594,11 +607,13 @@ p.pop();
 * O(1)
 
 **Best Case:**
-    * Already sorted
-    * O(n)
+* Already sorted
+* O(n)
+
 **Worst Case:**
-    * Reverse sorted
-    * O(n^2)
+* Reverse sorted
+* O(n^2)
+
 **Average:**
     * O(n^2)
 
