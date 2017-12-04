@@ -669,9 +669,11 @@ p.pop();
 **Best Case:**
     * Already sorted
     * O(n^2)
+    
 **Worst Case:**
     * Reverse sorted
     * O(n^2)
+    
 **Average:**
     * O(n^2)
 
@@ -706,9 +708,11 @@ p.pop();
 **Best Case:**
     * Already sorted
     * O(n)
+    
 **Worst Case:**
     * Reverse sorted
     * O(n^2)
+    
 **Average:**
     * O(n^2)
 
@@ -739,9 +743,11 @@ p.pop();
 
 **Best Case:**
     * O(nlog(n))
+    
 **Worst Case:**
     * Reverse sorted
     * O(nlog(n))
+    
 **Average:**
     * O(nlog(n))
 
@@ -776,9 +782,11 @@ p.pop();
 
 **Best Case:**
     * O(nlog(n))
+    
 **Worst Case:**
     * All elements equal
     * O(n^2)
+    
 **Average:**
     * O(nlog(n))
 
