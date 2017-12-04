@@ -813,6 +813,7 @@ p.pop();
 * If x doesn’t match with any of elements, return -1.
 
 **Data Structure:** Array and linked list
+
 **Worst Case:** O(n)
 
 -------------------------------------------------------
@@ -823,6 +824,7 @@ p.pop();
 * Repeatedly check until the value is found or the interval is empty.
 
 **Data Structure:** Sorted array and binary search tree
+
 **Worst Case:** O(log(n))
 
 -------------------------------------------------------
@@ -832,6 +834,7 @@ p.pop();
 * One starts at the root (selecting some arbitrary node as the root in the case of a graph) and explores as far as possible along each branch before backtracking.
 
 **Data Structure:** Graph of |V| vertices and |E| edges
+
 **Worst Case:** O(|V| + |E|)
 
 -------------------------------------------------------
@@ -841,6 +844,7 @@ p.pop();
 *  It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]) and explores the neighbor nodes first, before moving to the next level neighbours.
 
 **Data Structure:** Graph of |V| vertices and |E| edges
+
 **Worst Case:** O(|V| + |E|)
 
 -------------------------------------------------------
