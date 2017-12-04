@@ -838,6 +838,7 @@ Choice of pivot:
 -------------------------------------------------------
 ### 5.3 Depth-first Search
 (DFS)
+
 **Idea:**
 * One starts at the root (selecting some arbitrary node as the root in the case of a graph) and explores as far as possible along each branch before backtracking.
 
@@ -848,6 +849,7 @@ Choice of pivot:
 -------------------------------------------------------
 ### 5.4 Breadth-first Search
 (BFS)
+
 **Idea:**
 *  It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]) and explores the neighbor nodes first, before moving to the next level neighbours.
 
