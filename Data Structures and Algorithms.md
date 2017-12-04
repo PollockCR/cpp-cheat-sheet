@@ -27,17 +27,22 @@
 		- [3.1 NP Complete](#31-np-complete)
 		- [3.2 Traveling Salesman Problem](#32-traveling-salesman-problem)
 		- [3.3 Knapsack Problem](#33-knapsack-problem)
-	- [4.0 Algorithms](#40-algorithms)
+	- [4.0 Sorting Algorithms](#40-sorting-algorithms)
 		- [4.1 Insertion Sort](#41-insertion-sort)
 		- [4.2 Selection Sort](#42-selection-sort)
 		- [4.3 Bubble Sort](#43-bubble-sort)
 		- [4.4 Merge Sort](#44-merge-sort)
 		- [4.5 Quicksort](#45-quicksort)
-	- [5.0 Concepts](#50-concepts)
-		- [5.1 Abstraction](#51-abstraction)
-		- [5.2 Encapsulation](#52-encapsulation)
-		- [5.3 Inheritance](#53-inheritance)
-		- [5.4 Polymorphism](#54-polymorphism)	
+	- [5.0 Searching Algorithms](#50-searching-algorithms)
+		- [5.1 Sequential Search](#51-sequential-search)
+		- [5.2 Binary Search](#52-binary-search)
+		- [5.3 Depth-first Search](#53-depth-first-search)
+		- [5.4 Breadth-first Search](#54-breadth-first-search)
+	- [6.0 Concepts](#60-concepts)
+		- [6.1 Abstraction](#61-abstraction)
+		- [6.2 Encapsulation](#62-encapsulation)
+		- [6.3 Inheritance](#63-inheritance)
+		- [6.4 Polymorphism](#64-polymorphism)	
 
 <!-- /TOC -->
 
@@ -609,7 +614,7 @@ p.pop();
 [Info](https://www.tutorialspoint.com/design_and_analysis_of_algorithms/design_and_analysis_of_algorithms_01_knapsack.htm)
 
 -------------------------------------------------------
-## 4.0 Algorithms
+## 4.0 Sorting Algorithms
 ###  4.1 Insertion Sort
 **Idea:**
 1. Iterate over all elements
@@ -797,11 +802,53 @@ p.pop();
 ![QuickSort](Sorting/Animations/Quicksort.gif)
 
 -------------------------------------------------------
-## 5.0 Concepts
+## 5.0 Searching Algorithms
 [Info](https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/)
 
 -------------------------------------------------------
-### 5.1 Abstraction
+### 5.1 Sequential Search
+**Idea:**
+* Start from the leftmost element of arr[] and one by one compare x with each element of arr[]
+* If x matches with an element, return the index.
+* If x doesn’t match with any of elements, return -1.
+
+**Data Structure:** Array and linked list
+**Worst Case:** O(n)
+
+-------------------------------------------------------
+### 5.2 Binary Search
+**Idea:**
+* Search a sorted array by repeatedly dividing the search interval in half.
+* Begin with an interval covering the whole array. If the value of the search key is less than the item in the middle of the interval, narrow the interval to the lower half. Otherwise narrow it to the upper half.
+* Repeatedly check until the value is found or the interval is empty.
+
+**Data Structure:** Sorted array and binary search tree
+**Worst Case:** O(log(n))
+
+-------------------------------------------------------
+### 5.3 Depth-first Search
+(DFS)
+**Idea:**
+* One starts at the root (selecting some arbitrary node as the root in the case of a graph) and explores as far as possible along each branch before backtracking.
+
+**Data Structure:** Graph of |V| vertices and |E| edges
+**Worst Case:** O(|V| + |E|)
+
+-------------------------------------------------------
+### 5.4 Breadth-first Search
+(BFS)
+**Idea:**
+*  It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]) and explores the neighbor nodes first, before moving to the next level neighbours.
+
+**Data Structure:** Graph of |V| vertices and |E| edges
+**Worst Case:** O(|V| + |E|)
+
+-------------------------------------------------------
+## 6.0 Concepts
+[Info](https://beginnersbook.com/2013/03/oops-in-java-encapsulation-inheritance-polymorphism-abstraction/)
+
+-------------------------------------------------------
+### 6.1 Abstraction
 **Idea:**
 * The process of generalization.
 * A process where you show only the "relevant" data and "hide" unnecessary details of an object from the user.
@@ -811,7 +858,7 @@ p.pop();
 * When logging into Goolge account, need to know username and password. Do not need to know how information is sent to server, etc.
 
 -------------------------------------------------------
-### 5.2 Encapsulation
+### 6.2 Encapsulation
 (Data Hiding)
 
 **Idea:**
@@ -829,7 +876,7 @@ p.pop();
 * User only knows that he can store data in the form of key/value pair in a Hashtable and that he can retrieve that data in the various ways. But the actual implementation like, how and where this data is actually stored, is hidden from the user. User can simply use Hashtable wherever he wants to store Key/Value pairs without bothering about its implementation.
 
 -------------------------------------------------------
-### 5.3 Inheritance
+### 6.3 Inheritance
 
 **Idea:**
 * Mechanism by which an object acquires some/all properties of another object.
@@ -839,7 +886,7 @@ p.pop();
 * Car is a four wheeler vehicle so assume that we have a class FourWheeler and a sub class of it named Car. Here Car acquires the properties of a class FourWheeler. 
 
 -------------------------------------------------------
-### 5.4 Polymorphism
+### 6.4 Polymorphism
 
 **Idea:**
 * To process objects differently based on their data type.
