@@ -929,7 +929,7 @@ Choice of pivot:
 **Example:** Assume class B is a subclass of class A. Also assume both classes A and B have a method `bar()`. Let's say we have the following code in C++:
 
 ```
-A \*foo = new B();
+A *foo = new B();
 foo->bar();
 ```
 
