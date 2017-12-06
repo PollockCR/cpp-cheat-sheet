@@ -905,11 +905,12 @@ Choice of pivot:
 **Idea:**
 * To process objects differently based on their data type.
 * Literally: "many forms"
-* One method with multiple implementations, for a certain class of action. Which implementation to be used is decided at runtime depending upon the situation (i.e., data type of the object).
+* The ability of one method to have different behavior depending on the type of object it is being called on or the type of object being passed as a parameter.
 * Implemented by designing a generic interface, which provides generic methods for a certain class of action. Can be multiple classes which provide the implementation of these generic methods.
 
 **Examples:**
 * A car has a gear transmission system. It has four front gears and one backward gear. When the engine is accelerated, movement and power are delivered depending upon which gear is engaged. The action is same (pressing gas petal) but based the type of gear changes the action (forward, backward, etc.).
+* A method that does addition works for different data types (i.e. integer, float, etc.).
 
 **Static: Method Overloading**
 * More than one method having the same name, but behave differently based on arguments passed.
