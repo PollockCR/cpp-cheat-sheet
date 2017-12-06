@@ -44,7 +44,7 @@
 		- [6.3 Inheritance](#63-inheritance)
 		- [6.4 Polymorphism](#64-polymorphism)	
 		- [6.5 Virtual Functions](#65-virtual-functions)	
-		- [6.6 Miscellaneous](#65-miscellaneous)			
+		- [6.6 Miscellaneous](#66-miscellaneous)			
 
 <!-- /TOC -->
 
