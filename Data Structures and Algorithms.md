@@ -768,6 +768,19 @@ p.pop();
 
 ![MergeSort](Sorting/Animations/MergeSort2.gif)
 
+**Example Code**
+```
+int[] mergeSort(int[] array) {
+ if (array.length <= 1)
+ return array;
+ int middle = array.length / 2;
+ int firstHalf = mergeSort(array[0..middle - 1]);
+ int secondHalf = mergeSort(
+ array[middle..array.length - 1]);
+ return merge(firstHalf, secondHalf);
+}
+```
+
 -------------------------------------------------------
 ### 4.5 Quicksort
 **Idea:**
@@ -809,6 +822,21 @@ Choice of pivot:
 **Visualization**
 
 ![QuickSort](Sorting/Animations/Quicksort.gif)
+
+**Example Code**
+```
+void quicksort(int[] array, int startIndex, int endIndex) {
+ if (startIndex >= endIndex) {
+ // Base case (array segment has 1 or 0 elements
+ } else {
+ int pivotIndex = partition(array,
+ startIndex,
+endIndex);
+ quicksort(array, startIndex, pivotIndex - 1);
+ quicksort(array, pivotIndex + 1, endIndex);
+ }
+}
+```
 
 -------------------------------------------------------
 ## 5.0 Searching Algorithms
