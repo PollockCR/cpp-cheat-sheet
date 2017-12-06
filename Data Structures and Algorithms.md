@@ -43,6 +43,7 @@
 		- [6.2 Encapsulation](#62-encapsulation)
 		- [6.3 Inheritance](#63-inheritance)
 		- [6.4 Polymorphism](#64-polymorphism)	
+		- [6.5 Virtual Functions](#65-virtual-functions)	
 
 <!-- /TOC -->
 
@@ -927,7 +928,9 @@ Choice of pivot:
 
 **Example:** Assume class B is a subclass of class A. Also assume both classes A and B have a method "bar()". Let's say we have the following code in C++:
 
-```A \*foo = new B();
-foo->bar();```
+```
+A \*foo = new B();
+foo->bar();
+```
 
 If the method "bar()" is declared to be virtual, then when we call `foo‐>bar()`, the method found in class B will be run. This is how Java always handles methods and it's usually what we want to happen. However, if the method bar() is not declared to be virtual, then this code will run the method found in class A when we call `foo‐>bar()`.
