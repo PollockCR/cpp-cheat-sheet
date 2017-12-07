@@ -961,7 +961,7 @@ A *foo = new B();
 foo->bar();
 ```
 
-If the method `bar()` is declared to be virtual, then when we call `foo‐>bar()`, the method found in class B will be run. However, if the method `bar()` is not declared to be virtual, then this code will run the method found in class A when we call `foo‐>bar()`.
+If the method `bar()` is declared to be virtual in class A, then when we call `foo‐>bar()`, the method found in class B will be run. However, if the method `bar()` is not declared to be virtual, then this code will run the method found in class A when we call `foo‐>bar()`.
 
 -------------------------------------------------------
 ### 6.6 Miscellaneous
