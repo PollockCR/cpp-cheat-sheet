@@ -953,6 +953,7 @@ void quicksort(int[] array, int startIndex, int endIndex) {
 **Idea:**
 * The implementation for a method is selected according to the type of the object as opposed to the type of the reference.
 * Describes function behavior when working with superclasses and subclasses.
+* Virtual methods are used for polymorphism: They allow a single method call to invoke different method definitions based on the class of the object.
 
 **Example:** Assume class B is a subclass of class A. Also assume both classes A and B have a method `bar()`. Let's say we have the following code in C++:
 
