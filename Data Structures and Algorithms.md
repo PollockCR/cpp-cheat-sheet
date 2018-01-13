@@ -900,7 +900,7 @@ void quicksort(int[] array, int startIndex, int endIndex) {
 
 -------------------------------------------------------
 ### 6.2 Encapsulation
-(Data Hiding)
+(Data Hiding) - the hiding of implementation details
 
 **Idea:**
 * Binding the data with the code that manipulates it.
