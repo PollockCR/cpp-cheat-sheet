@@ -119,6 +119,19 @@ v.erase(v.begin());             //head
 v.erase(v.begin() + index);     //index
 v.pop_back();                   //tail
 
+//Subarray
+vector<int> subarray_A(A.begin() + i, A. begin() + j ) // sets sub array A to be A[i : j - 1].
+
+//Key methods in algorithms
+binary_search(A. begin(), A.end(), 42);
+lower_bound(A.begin(), A.end(), 42);
+upper_bound(A.begin(), A.end(), 42);
+fill(A.begin(), A.end(), 42);
+swap(x, y);
+min_element(A.begin(), A.end()), max_element(A.begin(), A.end());
+reverse(A.begin(), A.end()), rotate(A.begin(), A.begin() +shift, A.end());
+sort(A.begin(), A.end());
+
 //Clear
 v.clear();
 ```
