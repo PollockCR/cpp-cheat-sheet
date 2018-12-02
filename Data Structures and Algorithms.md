@@ -17,6 +17,7 @@
 		- [1.8 Queue `std::queue`](#18-queue-stdqueue)
 		- [1.9 Priority Queue `std::priority_queue`](#19-priority-queue-stdpriority_queue)
 		- [1.10 Heap `std::priority_queue`](#110-heap-stdpriority_queue)
+		- [1.11 String `std::string`](#111-string-stdstring)
 	- [2.0 Trees](#20-trees)
 		- [2.1 Binary Tree](#21-binary-tree)
 		- [2.2 Balanced Trees](#22-balanced-trees)
@@ -514,6 +515,42 @@ p.pop();
 **Max Heap Example (using a binary tree)**
 
 ![MaxHeap](General/MaxHeap.png)
+
+-------------------------------------------------------
+### 1.11 String `std::string`
+**Notes**
+
+```c++
+std::string str;
+
+//---------------------------------
+// General Operations
+//---------------------------------
+
+// Append chars to string
+str.append("Gauss");
+
+// Append char to string
+str.push_back('c');
+
+// Delete last character
+str.pop_back();
+
+// Insert chars in string
+str.insert(s.begin() + shift, "Gauss");
+
+// Position of chars in string
+std::size_t pos = str.find("live");
+
+// Get substring
+std::string newStr = str.substr(pos, len);
+
+// Compare two strings
+// 0 equal
+// <0 Either the value of the first character that does not match is lower in the compared string, or all compared characters match but the compared string is shorter.
+// >0 Either the value of the first character that does not match is greater in the compared string, or all compared characters match but the compared string is longer.
+int result = std.compare("Compared String")
+```
 
 -------------------------------------------------------
 ## 2.0 Trees
