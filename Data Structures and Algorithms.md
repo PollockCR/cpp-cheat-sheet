@@ -246,10 +246,10 @@ l.clear();
 //---------------------------------
 
 //Splice: Transfer elements from list to list
-//  splice(iterator pos, list &x)
-//  splice(iterator pos, list &x, iterator i)
-//  splice(iterator pos, list &x, iterator first, iterator last)
-l.splice(l.begin() + index, list2);
+//  splice(iterator pos, list &x) transfers all the elements of x into the container
+//  splice(iterator pos, list &x, iterator i) transfers only the element pointed by i from x into the container
+//  splice(iterator pos, list &x, iterator first, iterator last) transfers the range [first,last) from x into the container
+l.splice(l.begin() + index, list2); // transfer elements of list2 into l at index
 
 //Remove: Remove an element by value
 l.remove(value);
